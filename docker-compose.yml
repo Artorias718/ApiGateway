@@ -10,5 +10,11 @@ services:
     ports:
       - "9000:9000"
 
+#poi da rimuovere, serve a far comunicare diversi docker-compose in un network di default, ma kube dovrebbe già farlo
+networks:
+  default:
+    external:
+      name: front_default
+
 
 
