@@ -6,7 +6,7 @@ services:
     image: apigateway
     environment:
       eureka.client.serviceUrl.defaultZone: http://discovery:8761/eureka/
-    container_name: apygateway
+    container_name: apigateway
     ports:
       - "9000:9000"
 
